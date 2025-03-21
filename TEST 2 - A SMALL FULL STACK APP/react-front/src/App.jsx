@@ -115,6 +115,7 @@ function App() {
             onDelete={handleDeleteNotebook}
             newNotebookName={newNotebookName}
             onNewNotebookNameChange={setNewNotebookName}
+            
             onAddNotebook={handleAddNotebook}
           />
 
