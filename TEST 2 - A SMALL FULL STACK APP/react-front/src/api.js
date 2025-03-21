@@ -27,7 +27,8 @@ export const getNotebooks = async () => {
 // Delete a notebook
 export const deleteNotebook = async (id) => {
   try {
-    await axios.delete(`https://ouiamhendor.sandsculptor.keiken-digital.io:8080/api/notebooks/${id}`);
+    axios.delete(`https://ouiamhendor.sandsculptor.keiken-digital.io:8080/api/notebooks/${id}`);
+    return getNotebooks()
   } catch (err) {
     console.error("An API error has occurred while deleting a notebook:", err);
   }
